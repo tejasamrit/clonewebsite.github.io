@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>website clone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav{
+            width: 100%;
+            height: 63px;
+            box-shadow: 0px 2px grey;
+             /* overflow: hidden; */
+  /* background-color:white; */
+  /* position:sticky; */
+ /* top: 0px;  */
+   /* width: 100%; */
+
+        }
+        nav ul{
+            list-style-type: none;
+            float: right;
+            /* background-color: aqua; */
+    margin: 21px;
+    /* margin-left: 50px; */
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 18px;
+        }
+        nav ul li{
+            display: inline-block;
+            /* margin-right: 40px; */
+        }
+        nav ul li a{
+            text-decoration: none;
+            /* padding-right: 22px; */
+            margin: 15px;
+            /* padding: 10px 15px; */
+            text-align: center;
+            color: black;
+            display: block;
+        }
+        nav h3{
+            /* background-color: aqua; */
+    display: inline-block;
+    margin: 19px;
+    font-size: 20px;
+    color: blueviolet;
+        }
+        .button{
+            float: right;
+            margin-right: 40px;
+            margin-top: 13px;           
+}
+.button button{
+    width: 58px;
+    height: 35px;
+    border-radius: 8px;
+    background-color:rgb(131, 4, 250);
+    color: white;
+    font-size: 14px;
+    border-color:rgb(131, 4, 249);
+}
+.button button:hover{
+    background-color: rgb(91, 4, 173);
+}
+.container{
+    width: 80%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-left: 120px;
+    margin-top: 5px;
+
+}
+.left{
+    float: left;
+    width: 50%;
+    /* background-color: rgb(247, 203, 203); */
+}
+.right{
+    width: 50%;
+    float: right;
+    background-color: rgb(205, 163, 245);
+}
+.heading{
+    display: inline-block;
+    margin: 37px;
+}
+h1 span{
+    color: blueviolet;
+}
+.heading p{
+    font-size: 20px;
+}
+#btn1,#btn2{
+    padding: 9px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+#btn2{
+    background-color: rgb(236, 233, 233);
+    color: black;
+    border-color: none;
+}
+#btn1:hover{
+    background-color: rgb(49, 49, 49);
+}
+#btn2:hover{
+    background-color: rgb(217, 213, 213);
+}
+.right img{
+    object-fit:fill;
+    width: 475px;
+    height: 400px
+}
+.head h2{
+    text-align: center;
+    font-size: 34px;
+
+}
+.box{
+    /* background-color: rgb(220, 188, 250); */
+    width:90%;
+    margin-top:12px ;
+    margin-left: 70px;
+    /* margin-left: 123px; */
+    border-color: 3px black;
+}
+.card{
+    display: inline-block;
+    /* margin-left: 55px; */
+    margin: 15px;
+    border-radius: 8px;
+    /* background-color: aqua; */
+padding: 12px;
+border-color: 3px black;
+box-shadow: 5px 5px 5px 5px rgb(192, 191, 191);
+}
+.card img{
+border-radius: 10px;
+}
+.card p{
+    padding: 5px;
+    padding-top: 5px;
+}
+.card h3{
+    padding: 5px;
+}
+#button{
+    padding: 5px;
+    margin-top: 19px;
+    background-color: blueviolet;
+    border-radius: 11px;
+    padding: 8px;
+    color: white;
+}
+#button:hover{
+    background-color: rgb(149, 66, 226);
+}
+.boxer{
+    width: 80%;
+    height: 300px;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-left: 120px;
+    margin-top: 5px;
+    border-radius: 10px;
+    
+}
+.left-box{
+    float: left;
+    width: 50%;
+    padding: 30px 50px;
+    margin: 8px;
+    border-radius: 17px;
+    box-shadow: 3px 3px 3px 3px rgb(185, 183, 183);
+    /* background-color: rgb(247, 242, 242); */
+    --tw-bg-opacity: 1;
+    background-color: rgba(243,244,246,var(--tw-bg-opacity));
+    
+}
+.right-box{
+    width: 50%;
+    float: right;
+    border-radius: 17px;
+    padding: 30px 50px;
+    margin: 8px;
+    box-shadow: 3px 3px 3px 3px rgb(185, 183, 183);
+    /* box-shadow: 3px 3px 3px 3px rgb(185, 183, 183); */
+    /* background-color: rgb(247, 242, 242); */
+    --tw-bg-opacity: 1;
+    background-color: rgba(243,244,246,var(--tw-bg-opacity));
+    /* background-color: rgb(205, 163, 245); */
+}
+.author{
+    font-size: 18px;
+    /* text-decoration: underline; */
+}
+.footer{
+               /* background-color: rgb(214, 212, 215); */
+               width: 100%;
+               display: flex;
+               height: 75px;
+               padding: 15px;
+
+           }
+           .footer img{
+               border-radius: 50%;
+               margin-left: 105px
+
+           }
+           .footer h2{
+            margin-left: 15px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+           }
+           #line{
+               width: 2px;
+               height: 35px;
+               background-color: rgb(48, 44, 44);
+               margin-left: 19px;
+    margin-top: 9px;
+           }
+           .footer h4{
+            margin-left: 19px;
+    margin-top: 18px;
+    font-size: small;
+           }
+           #icons{
+            margin-left: 180px;
+           }
+           #facebook{
+               display: inline-block;
+           }
+           
+    </style>
+</head>
+<body>
+        <nav>
+            <h3>CodeWithTejas</h3>
+            <div class="button">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           
+        </nav>
+        <div class="container">
+            <div class="left">
+                <div class="heading">
+                    <h1>Welcome to <br> <span>CodeWithTejas</span></h1>
+                    <br>
+                    <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p><br><br>
+                    <input type="button" value="Free Courses" id="btn1">
+                    <input type="button" value="Explore Blog" id="btn2">
+
+                </div>
+
+            </div>
+            <div class="right">
+               <img src="computer.jpg" alt="">
+            </div>
+        </div><br><br>
+        <div class="head">
+            <h2>Recommended Courses</h2>
+        </div><br>
+        <div class="box">
+            <div class="card" style="width: 18rem;">
+                <img src="c logo.png" class="card-img-top" alt="..." width="285px">
+                <div class="card-body"><br>
+                  <h3 class="card-title">C course in hindi</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <button id="button">Start Watching</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" >
+                <img src="java.jpg" class="card-img-top" alt="..." width="285px">
+                <div class="card-body"><br>
+                  <h3 class="card-title">Java course in hindi</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button id="button">Start Watching</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="python.webp" class="card-img-top" alt="..." width="285px">
+                <div class="card-body"><br>
+                  <h3 class="card-title">Python course in hindi</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button id="button">Start Watching</button>
+                </div>
+              </div>
+        </div>
+        <br><br>
+        <div class="head">
+            <h2>Testimonials</h2>
+        </div><br><br>
+        <div class="boxer">
+        <div class="left-box">
+            <img src="right-quote.png" alt="" width="30px" height="30px"><br><br>
+            I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content. I can assure you that it'll be worth it.
+            <br><br><br>
+            <span class="author">Tejas Amrit</span><br>
+            <span class="web">web developer</span>
+
+
+        </div>
+        <div class="right-box">
+            <img src="right-quote.png" alt="" width="30px" height="30px"><br><br>
+            For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is for you! Both basic and advanced stacks are covered on this channel, and one can learn according to his skill levels. And the icing on the cake is, everything is available for free.
+            <br><br><br>
+            <span class="author">Tejas Amrit</span><br>
+            <span class="web">software engineer</span>
+        </div>
+    </div><br><br><br>
+    <div class="footer">
+        <img src="me.jpg" alt="" width="50px" height="50px">
+        <h2>CodeWithTejas</h2>
+        <div id="line"></div>
+        <h4>Copyright © 2022 CodeWithTejas.com</h4>
+        
+        </div>
+</body>
+</html>
